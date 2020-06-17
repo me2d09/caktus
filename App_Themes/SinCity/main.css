@@ -1,0 +1,57 @@
+body {margin-top:0px; font-family: Verdana; 
+    color:#ccc; font-size:11pt; 
+    background:  black;
+    margin-top: 0px
+    }
+p {font-size:11pt}
+td {font-size:11pt}
+a {color:#fff; font-weight:bold; text-decoration:none}
+a:hover {color:#fff; font-weight:bold; text-decoration:underline}
+a.akt {color:#777; font-size:10pt; font-weight:bold; text-decoration:none}
+a.akt:hover {color:#fff; font-size:10pt; font-weight:bold; text-decoration:none}
+a.mail {color:#777; font-weight:bold; text-decoration:none}
+a.mail:hover {color:#fff; font-weight:bold; text-decoration:underline}
+.nadpis {font-family: Times; font-weight:bold; font-size:14pt}
+.date {font-weight:bold; color:#777; font-size:12pt; text-align:left}
+.kontakt {color:#fff; font-weight:bold}
+.kontaktZ {color:#ffc0cb; font-weight:bold}
+.kapela1 {font-weight:900; font-family: Verdana; color:#777; font-size:9pt}
+.kapela1:hover {font-weight:900; font-family: Verdana; color: White; font-size:9pt}
+.kapela2 {font-weight:bold; font-family: Times; color:#777; font-size:8.5pt}
+.kapela3 {font-family: Times; color:white; font-size:8.5pt}
+.centrovany { text-align:center}
+.sekce { font-weight:bold; font-family: Verdana; color:white; font-size:11pt}
+.koncert {font-weight:bold; font-family: Verdana; color:#777; font-size:11pt; text-decoration: none}
+.koncert:hover {font-weight:bold; font-family: Verdana; color:yellow; font-size:11pt; text-decoration: underline}
+a.menu {display: block; width:160px; background-color: Black; color:#777;
+     vertical-align:middle; text-align: center; font-size: 15px; margin-bottom: 4px; padding: 4px 0px 5px 0px}
+a.menu b {color:#fff}     
+a.menu:hover {background: url('images/menu.jpg') center; text-decoration:none}
+div.podmenu {font-size:7pt; margin-top: 20px}
+td.spodni {font-size:8pt; text-align:center; padding-top: 16px}
+td.spodni div {font-size:11pt}
+.slogan {border: solid 2px #ccc; padding: 3px}
+div.divslogan {text-align:center; margin-top:14px; margin-bottom: 5px}
+div.aktuality {text-align:left; margin: 10px 6px 0px 6px}
+img.nadpisImg { vertical-align:middle}
+.postNadpis { font-weight:bold}
+div.oddelovac { width: 100%; height: 22px; background:url('images/line.gif'); margin-bottom: 15px; margin-top: 10px;}
+table.login input { font-size: 10px; height: 12px; width: 50px}
+table.login td { font-size: 10px}
+table .tabulka {border: 3px white solid}
+table .bordered {border: 3px white solid}
+
+.specialvalign {display: table; vertical-align: text-top}
+
+
+a.X { border: none}
+a.X:hover { border: none}
+img.X {margin:7px ;border:none 0px}
+p.fotky { text-align: center}
+div.X { float: left}
+
+#phototable { width: 750px; float: none;}
+
+#phototable div { float: left; width: 250px; height: 200px; text-align: center; font-size: 10pt; }
+#phototable div  img{ border: 2px solid white;
+
