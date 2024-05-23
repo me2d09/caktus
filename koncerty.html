@@ -65,7 +65,7 @@ title: Koncerty
 			<td>{{ k.date }}</td>
             <td>
                     <a href="{{ k.link }}">{{ k.venue }}</a><br/>
-                    {% if k.place %}<span>({{ k.place }})</span>{% else %}
+                    {% if k.place %}<span>({{ k.place }})</span>{% endif %}
             </td>
             <td>
                 <span>{{ k.time }}<br></span>
