@@ -54,10 +54,27 @@
                 <td style="vertical-align:top">
                     
     <div>
-	<table cellspacing="0" cellpadding="4" rules="all" border="2" id="ctl00_ContentPlaceHolder1_GridView1" style="border-width:2px;border-style:solid;width:100%;border-collapse:collapse;">
-		<tr style="border-width:0px;border-style:None;">
+
+    <table cellspacing="0" cellpadding="4" rules="all" border="2" style="border-width:2px;border-style:solid;width:100%;border-collapse:collapse;">
+        <tr class="bordered" style="border-width:2px;border-style:solid;">
+			<th scope="col">kdy</th><th scope="col">kde</th><th scope="col">upřesnění</th>
+		</tr>
+        {% for k in site.data.koncerty %}
+        <tr class="tabulka" valign="top" style="border-color:White;border-width:1px;border-style:Solid;">
+			<td>{{ k.date }}</td>
+            <td>
+                    <a href="{{ k.link }}">{{ k.venue }}</a><br/>
+                    {% if k.place %}<span>({{ k.place }})</span>{% endif %}
+            </td>
+            <td>
+                <span>{{ k.time }}<br></span>
+            </td>
+        </tr>
+        {% else %}
+        <tr style="border-width:0px;border-style:None;">
 			<td colspan="3">Caktus teď nemá naplánované žádné koncerty :(.</td>
 		</tr>
+        {% endfor %}
 	</table>
 </div>
     
