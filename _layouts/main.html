@@ -1,0 +1,47 @@
+---
+title: Caktus.cz - blues - rock'n'roll showband z Prahy
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="https://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="Content-language" content="cs" />
+<meta name="description" content="Oficiální web kapely Caktus Showband." />
+<meta name="keywords" content="caktus showband blues rock n roll" />
+<meta name="author" content="Ceramtec s.r.o. - Petr Čermák" />
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="nosnippet,archive" /><title>
+	Caktus.cz - blues - rock'n'roll showband z Prahy
+</title><link href="App_Themes/SinCity/main.css" type="text/css" rel="stylesheet" /></head>
+<body>
+    <div id="start">
+        <table style="width: 1000px; margin: 0px auto;">
+            <tr>
+                <td id="ctl00_tdHorni" height="110px" colspan="{%- if page.homepage -%}3{%- else -%}2{%- endif -%}" style="text-align:center; vertical-align: top">
+                    <img src="images/mava1.png" alt="Caktus" style="float:left; margin-left:60px" />
+                    <img src="images/mava2.png" alt="Caktus" style="float:right; margin-right: 75px" />
+                    {% if page.homepage %}
+                    <img id="ctl00_imgNadpis" class="nadpisImg" src="App_Themes/SinCity/images/logo.png" alt="Caktus Showband logo" style="border-width:0px;" />
+                    {% else %}
+                    <img class="nadpisImg" src="App_Themes/SinCity/images/{{ page.name | remove: ".html" }}.png" alt="{{ page.name | remove: ".html" }}" style="border-width:0px;" /><span id="ctl00_lblPostNadpis" class="postNadpis"></span>
+                    <span><br/><a href="/"><img alt="caktus_home" style="vertical-align:middle; border-style:none" src="images/home_caktus.png"/></a>
+                        <a href="/">návrat na index</a></span>
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                {% include menu.html %}
+                <td style="vertical-align:top">
+                    {{ content }}
+                </td>
+                {% if page.homepage %}
+                    {% include odkazy.html %}
+                {% endif %}
+            </tr>
+            {% include footer.html %}
+        </table>
+    </div>
+</body>
+</html>
